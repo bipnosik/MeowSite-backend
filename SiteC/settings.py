@@ -30,6 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'https://meowsite-backend-production.up.railway.app/',
 ]
 
 
@@ -53,7 +54,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # CORS (если фронтенд работает на другом домене, например, localhost:3000)
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://meowsite-gdsoks1wr-maxs-projects-adb77546.vercel.app',
+    'https://frontend-l8ox6b5ne-maxs-projects-adb77546.vercel.app',
 
 ]
 
