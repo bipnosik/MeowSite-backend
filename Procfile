@@ -1,1 +1,1 @@
-web: gunicorn MeowSite.MeowSite.wsgi:application --bind 0.0.0.0:$PORT
+web: gunicorn SiteC.wsgi:application --bind 0.0.0.0:$PORT
