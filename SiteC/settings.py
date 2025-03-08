@@ -30,7 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'https://meowsite-backend-production.up.railway.app/',
+    'meowsite-backend-production.up.railway.app',
 ]
 
 
