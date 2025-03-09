@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-js1&x%0j3!ac02z68#p0o_m4h@y#ze2jcj_t4u&lj#)e6@slpj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "meowsite-backend-production.up.railway.app",
+]
 
 
 # Application definition
@@ -153,3 +157,7 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),     # Время жизни токена обновления
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://meowsite-backend-production.up.railway.app',
+]
