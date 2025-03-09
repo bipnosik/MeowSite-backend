@@ -27,11 +27,7 @@ SECRET_KEY = 'django-insecure-js1&x%0j3!ac02z68#p0o_m4h@y#ze2jcj_t4u&lj#)e6@slpj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'meowsite-backend-production.up.railway.app',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
