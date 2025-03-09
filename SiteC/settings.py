@@ -102,8 +102,12 @@ WSGI_APPLICATION = 'SiteC.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',         # Имя базы из Railway
+        'USER': 'postgres',       # Пользователь из Railway
+        'PASSWORD': 'esaRJAyekNfTxVEPnXVOrozpBELIbCbj', # Пароль из Railway
+        'HOST': 'postgres.railway.internal',           # Хост из Railway
+        'PORT': '5432',           # Порт из Railway (обычно 5432)
     }
 }
 
