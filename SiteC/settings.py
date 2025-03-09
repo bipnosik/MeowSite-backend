@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-js1&x%0j3!ac02z68#p0o_m4h@y#ze2jcj_t4u&lj#)e6@slpj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -54,8 +54,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # CORS (если фронтенд работает на другом домене, например, localhost:3000)
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://frontend-l8ox6b5ne-maxs-projects-adb77546.vercel.app',
-
+    'https://meowsite-frontend.vercel.app',
 ]
 
 MIDDLEWARE = [
