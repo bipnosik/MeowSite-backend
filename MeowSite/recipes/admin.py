@@ -18,7 +18,7 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.delete()  # Удаляем выбранные комментарии
         self.message_user(request, f"Успешно удалено {deleted_count} комментариев.")
 
-    delete_selected_comments.short_description = "Удалить выбранные комментарии"
+    delete_selected_comments.short_description = "Удалить выбранные комментарии."
 
 
 admin.site.register(Comment, CommentAdmin)
